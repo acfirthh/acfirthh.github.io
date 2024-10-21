@@ -11,3 +11,6 @@ I've made this blog to share my research into various topics within cybersecurit
 
 [![Github URL](https://img.shields.io/github/followers/acfirthh?label=Github&logo=Github&style=for-the-badge)](https://github.com/acfirthh)
 
+## Writeups
+- [HackTheBox Writeups](/writeups/hackthebox)
+- [TryHackMe Writeups](/writeups/tryhackme)
