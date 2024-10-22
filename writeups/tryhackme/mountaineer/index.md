@@ -11,7 +11,7 @@ permalink: /writeups/tryhackme/mountaineer
 
 **Machine Name:** Mountaineer\
 **Difficulty:** Hard\
-**Link to Machine:** [https://tryhackme.com/r/room/mountaineerlinux](https://tryhackme.com/r/room/mountaineerlinux) 
+**Link to Machine:** [TryHackMe - Mountaineer (Hard)](https://tryhackme.com/r/room/mountaineerlinux) 
 
 ### Tools Used:
 - NMAP
@@ -224,7 +224,7 @@ Searching about a bit more I found a **sent** email from **k2** to **lhotse** co
 
 ![Lhotse Personal Information](images/k2_sent_lhotse_email.png)
 
-The way that the information is laid reminded me of a password profiling tool named `cupp` which is used to create a list of possible password combinations from given information.
+The way that the information is laid out reminded me of a password profiling tool named `cupp` which is used to create a list of possible password combinations from given information.
 
 Running the command `cupp -i`, to start the program in interactive mode, and filling in the information I have about **lhotse** generated a password list.
 

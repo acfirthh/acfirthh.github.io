@@ -7,13 +7,18 @@ permalink: /writeups/tryhackme
 All writeups are sorted into groups by difficulty.
 
 ## Easy
-- [Mountaineer](/writeups/tryhackme/mountaineer)
+- [JPGChat](/writeups/tryhackme/jpgchat)
+- [LazyAdmin](/writeups/tryhackme/lazyadmin)
+- [Pickle Rick](/writeups/tryhackme/pickle-rick)
+- [RootMe](/writeups/tryhackme/rootme)
 
 ## Medium
-- No Writeups Yet.
+- [Mr Robot CTF](/writeups/tryhackme/mrrobot-ctf)
+- [Road](/writeups/tryhackme/road)
+
 
 ## Hard
-- No Writeups Yet.
+- [Mountaineer](/writeups/tryhackme/mountaineer)
 
 ## Insane
 - No Writeups Yet.
