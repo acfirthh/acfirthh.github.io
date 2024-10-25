@@ -14,3 +14,6 @@ I've made this blog to share my research into various topics within cybersecurit
 ## Writeups
 - [HackTheBox Writeups](/writeups/hackthebox)
 - [TryHackMe Writeups](/writeups/tryhackme)
+
+## Custom Scripts and Tools
+- [Custom Scripts and Tools](/tools)
