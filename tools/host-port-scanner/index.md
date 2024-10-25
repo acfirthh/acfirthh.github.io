@@ -34,8 +34,8 @@ Even if you have such a limited shell into the target where you cannot use any t
 5. Run the script: `./host_port_scan.sh`
 
 ### Features:
-This script is written entirely in **Bash**, primarily compatible with **Unix-like** Operating Systems, including:\
-- **Linux Distros** (like Ubuntu, CentOS, Fedora, Debian\ etc.)
+This script is written entirely in **Bash**, primarily compatible with **Unix-like** Operating Systems, including:
+- **Linux Distros** (like Ubuntu, CentOS, Fedora, Debian, etc.)
 - **macOS** (which includes Bash by default, though newer versions use Zsh as the default shell)
 - **FreeBSD** (and other BSD variants)
 - **Solaris**
