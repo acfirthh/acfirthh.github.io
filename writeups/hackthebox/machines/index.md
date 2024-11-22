@@ -13,7 +13,7 @@ All writeups are sorted into groups by difficulty.
 - No Writeups Yet.
 
 ## Hard
-- No Writeups Yet.
+- [Yummy](/writeups/hackthebox/machines/yummy)
 
 ## Insane
 - No Writeups Yet.
