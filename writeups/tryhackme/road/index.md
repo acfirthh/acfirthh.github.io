@@ -1,10 +1,11 @@
 ---
-title: "TryHackMe - Road"
+layout: post
+title: "TryHackMe - Road Writeup"
 permalink: /writeups/tryhackme/road
+author: acfirthh
 ---
 
 ![TryHackMe - Road (Medium)](images/Road.png)
-<h1><ins>TryHackMe: Road</ins></h1>
 
 **Date:** 01/12/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

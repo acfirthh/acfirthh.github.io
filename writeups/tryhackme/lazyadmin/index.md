@@ -1,10 +1,11 @@
 ---
-title: "TryHackMe - LazyAdmin"
+layout: post
+title: "TryHackMe - LazyAdmin Writeup"
 permalink: /writeups/tryhackme/lazyadmin
+author: acfirthh
 ---
 
 ![TryHackMe - LazyAdmin (Easy)](images/LazyAdmin.jpeg)
-<h1><ins>TryHackMe: LazyAdmin</ins></h1>
 
 **Date:** 13/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

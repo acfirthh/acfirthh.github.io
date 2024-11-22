@@ -1,10 +1,11 @@
 ---
-title: "TryHackMe - Mr Robot CTF"
+layout: post
+title: "TryHackMe - Mr Robot CTF Writeup"
 permalink: /writeups/tryhackme/mrrobot-ctf
+author: acfirthh
 ---
 
 ![TryHackMe - Mr Robot CTF (Medium)](images/MrRobot_CTF.jpeg)
-<h1><ins>TryHackMe: Mr Robot CTF</ins></h1>
 
 **Date:** 06/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

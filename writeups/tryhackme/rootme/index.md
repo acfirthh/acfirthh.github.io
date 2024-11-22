@@ -1,10 +1,11 @@
 ---
-title: "TryHackMe - RootMe"
+layout: post
+title: "TryHackMe - RootMe Writeup"
 permalink: /writeups/tryhackme/rootme
+author: acfirth
 ---
 
 ![TryHackMe - RootMe (Easy)](images/RootMe.png)
-<h1><ins>TryHackMe: RootMe</ins></h1>
 
 **Date:** 11/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

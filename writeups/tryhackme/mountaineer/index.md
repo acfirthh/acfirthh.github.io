@@ -1,10 +1,11 @@
 ---
-title: "TryHackMe - Mountaineer"
+layout: post
+title: "TryHackMe - Mountaineer Writeup"
 permalink: /writeups/tryhackme/mountaineer
+author: acfirthh
 ---
 
 ![TryHackMe: Mountaineer (Hard)](images/mountaineer.png)
-<h1><ins>TryHackMe: Mountaineer</ins></h1>
 
 **Date:** 21/10/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)

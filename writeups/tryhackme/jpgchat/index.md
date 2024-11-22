@@ -1,10 +1,11 @@
 ---
-title: "TryHackMe - JPGChat"
+layout: post
+title: "TryHackMe - JPGChat Writeup"
 permalink: /writeups/tryhackme/jpgchat
+author: acfirthh
 ---
 
 ![TryHackMe: JPGChat (Easy)](images/JPGChat.png)
-<h1><ins>TryHackMe: JPGChat</ins></h1>
 
 **Date:** 29/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)
