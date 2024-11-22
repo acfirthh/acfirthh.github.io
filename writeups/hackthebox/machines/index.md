@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "HackTheBox Machine Writeups"
 permalink: /writeups/hackthebox/machines
 ---

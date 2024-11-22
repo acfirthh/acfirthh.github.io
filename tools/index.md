@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Custom Scripts and Tools"
 permalink: /tools
 ---

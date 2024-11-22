@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Acfirth's Blog"
 permalink: /
 ---
@@ -10,6 +11,9 @@ I've made this blog to share my research into various topics within cybersecurit
 <a href="https://tryhackme.com/p/acfirth"><img src="https://tryhackme-badges.s3.amazonaws.com/acfirth.png" alt="TryHackMe: acfirth" /></a>
 
 [![Github URL](https://img.shields.io/github/followers/acfirthh?label=Github&logo=Github&style=for-the-badge)](https://github.com/acfirthh)
+
+## Posts
+- [View all of my posts](/posts)
 
 ## Writeups
 - [HackTheBox Writeups](/writeups/hackthebox)

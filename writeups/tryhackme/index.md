@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "TryHackMe Writeups"
 permalink: /writeups/tryhackme
 ---
