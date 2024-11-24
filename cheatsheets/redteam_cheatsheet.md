@@ -1010,7 +1010,7 @@ compromised network as if they were directly connected to the network.
     ./chisel client <listener_ip>:<listener_port> R:socks
 
 3. On the attacker machine, add the SOCKS5 proxy to your 'proxychains.conf' file:
-    socks5 <127.0.0.1> <listener_port>
+    socks5 <Listener_IP|127.0.0.1> <listener_port>
 
 4. Use the 'proxychains' command to route traffic through the SOCK5 proxy to the
    compromised network.
