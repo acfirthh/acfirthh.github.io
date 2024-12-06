@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "TryHackMe - Mountaineer Writeup"
 permalink: /writeups/tryhackme/mountaineer
-author: acfirthh
 ---
 
 ![TryHackMe: Mountaineer (Hard)](images/mountaineer.png)

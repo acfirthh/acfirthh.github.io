@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "TryHackMe - JPGChat Writeup"
 permalink: /writeups/tryhackme/jpgchat
-author: acfirthh
 ---
 
 ![TryHackMe: JPGChat (Easy)](images/JPGChat.png)

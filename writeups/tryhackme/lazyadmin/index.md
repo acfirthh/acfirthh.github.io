@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "TryHackMe - LazyAdmin Writeup"
 permalink: /writeups/tryhackme/lazyadmin
-author: acfirthh
 ---
 
 ![TryHackMe - LazyAdmin (Easy)](images/LazyAdmin.jpeg)

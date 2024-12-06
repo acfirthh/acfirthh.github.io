@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "TryHackMe - Pickle Rick Writeup"
 permalink: /writeups/tryhackme/pickle-rick
-author: acfirthh
 ---
 
 ![TryHackMe - Pickle Rick (Easy)](images/Pickle_Rick.jpeg)

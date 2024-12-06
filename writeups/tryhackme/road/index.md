@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "TryHackMe - Road Writeup"
 permalink: /writeups/tryhackme/road
-author: acfirthh
 ---
 
 ![TryHackMe - Road (Medium)](images/Road.png)

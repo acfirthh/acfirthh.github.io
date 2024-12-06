@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "HackTheBox - Yummy Writeup"
 permalink: /writeups/hackthebox/machines/yummy
-author: acfirthh
 ---
 
 ![HackTheBox Yummy (Hard)](images/yummy.png)

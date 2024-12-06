@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: "TryHackMe - RootMe Writeup"
 permalink: /writeups/tryhackme/rootme
-author: acfirth
 ---
 
 ![TryHackMe - RootMe (Easy)](images/RootMe.png)
