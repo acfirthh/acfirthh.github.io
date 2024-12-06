@@ -4,7 +4,8 @@ title: "TryHackMe - RootMe Writeup"
 permalink: /writeups/tryhackme/rootme
 ---
 
-![TryHackMe - RootMe (Easy)](images/RootMe.png)
+![TryHackMe: RootMe (Easy)](images/RootMe.png)
+<h1><ins>TryHackMe: RootMe Writeup</ins></h1>
 
 **Date:** 11/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

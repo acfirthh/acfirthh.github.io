@@ -4,7 +4,8 @@ title: "TryHackMe - LazyAdmin Writeup"
 permalink: /writeups/tryhackme/lazyadmin
 ---
 
-![TryHackMe - LazyAdmin (Easy)](images/LazyAdmin.jpeg)
+![TryHackMe: LazyAdmin (Easy)](images/LazyAdmin.jpeg)
+<h1><ins>TryHackMe: LazyAdmin Writeup</ins></h1>
 
 **Date:** 13/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

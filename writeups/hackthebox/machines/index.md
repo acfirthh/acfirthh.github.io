@@ -15,6 +15,7 @@ All writeups are sorted into groups by difficulty.
 
 ## Hard
 - [Yummy](/writeups/hackthebox/machines/yummy)
+- [Vintage](/writeups/hackthebox/machines/vintage)
 
 ## Insane
 - No Writeups Yet.

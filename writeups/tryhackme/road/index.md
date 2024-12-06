@@ -4,7 +4,8 @@ title: "TryHackMe - Road Writeup"
 permalink: /writeups/tryhackme/road
 ---
 
-![TryHackMe - Road (Medium)](images/Road.png)
+![TryHackMe: Road (Medium)](images/Road.png)
+<h1><ins>TryHackMe: Road Writeup</ins></h1>
 
 **Date:** 01/12/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)
