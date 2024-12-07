@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Basic Host and Port Scanner"
 permalink: /tools/host-port-scanner
 ---

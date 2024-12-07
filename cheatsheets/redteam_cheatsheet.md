@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Redteam Cheatsheet"
 permalink: /cheatsheets/redteam-cheatsheet
 ---

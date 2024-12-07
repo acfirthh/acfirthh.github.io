@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "General Linux Cheatsheet"
 permalink: /cheatsheets/linux-cheatsheet
 ---
