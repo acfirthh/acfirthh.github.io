@@ -11,7 +11,7 @@ All writeups are sorted into groups by difficulty.
 - No Writeups Yet.
 
 ## Medium
-- No Writeups Yet.
+- [Administrator](/writeups/hackthebox/machines/administrator)
 
 ## Hard
 - [Yummy](/writeups/hackthebox/machines/yummy)
