@@ -26,10 +26,8 @@ github_username:  acfirthh
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  I made this site to present my cybersecurity research, custom tools,
-  vulnerability reproductions, and writeups for TryHackMe and HackTheBox. I have also
-  written some cheatsheets to help with general Linux use and Penetration Testing.
-  Thanks for visiting!
+  A portfolio showcasing my work and projects in the cybersecurity field,
+  with a focus on Penetration Testing.
 
 date_format: "%Y-%m-%d"
 
@@ -37,6 +35,7 @@ date_format: "%Y-%m-%d"
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
