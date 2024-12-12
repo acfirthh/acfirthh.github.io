@@ -8,14 +8,16 @@ permalink: /writeups/hackthebox/machines
 All writeups are sorted into groups by difficulty.
 
 ## Easy
-- No Writeups Yet.
+- [Alert](/writeups/hackthebox/machines/alert)
+- [LinkVortex](/writeups/hackthebox/machines/linkvortex)
 
 ## Medium
 - [Administrator](/writeups/hackthebox/machines/administrator)
+- [Certified](/writeups/hackthebox/machines/certified)
 
 ## Hard
 - [Yummy](/writeups/hackthebox/machines/yummy)
 - [Vintage](/writeups/hackthebox/machines/vintage)
 
 ## Insane
-- No Writeups Yet.
+- [Ghost](/writeups/hackthebox/machines/ghost)
