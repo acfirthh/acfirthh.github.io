@@ -100,7 +100,7 @@ After uploading the payload and then downloading the file from the given link, I
 
 ![/proc/self/environ](images/aws_keys_in_proc_self_environ.png)
 
-Unforunately I was unable to make use of the AWS credentials, but this confirmed my assumptions that it was using AWS and that the `local.clouded.htb` subdomain pointed to an S3 bucket storing the uploaded files.
+I didn't go down the route of using the AWS credentials and instead abused a **path traversal** vulnerability, but this confirmed my assumptions that it was using AWS and that the `local.clouded.htb` subdomain pointed to an S3 bucket storing the uploaded files.
 
 ## First look at local.clouded.htb
 Browsing to `local.clouded.htb` I was met with an error page, even when visiting the `/uploads/` endpoint.
@@ -126,6 +126,29 @@ The `clouded-internal` endpoint seemed interesting, so I simply added it to the 
 ![Exposed backup.db](images/disclosed_backup_db.png)
 
 I downloaded the **"backup.db"** file and opened it up, it contained first names, last names, and the **MD5** hashes of the passwords of the users.
+
+#### Using the AWS Credentials Instead of Path Traversal
+As mentioned before, I didn't personally make use of the AWS credentials found in `/proc/self/environ` and instead abused the **path traversal** vulnerability as displayed above. But this is how the AWS credentials could have been used to achieve the same outcome:
+
+1. Extract the required AWS values from the returned data
+    - AWS_SECRET_ACCESS_KEY `(eDjlDHTtnOELI/L3FRMENG/dFxLujMjUSTaCHILLGUY)`
+    - AWS_ACCESS_KEY_ID     `(AKIA5M34BDN8GCJGRFFB)`
+    - AWS_REGION            `(us-east-1)`
+
+2. Install the `aws` command-line tool\
+    `sudo apt install awscli`
+
+3. Use the credentials in the AWS configurations\
+    `aws configure --endpoint-url=http://local.clouded.htb`\
+    [Enter the AWS_SECRET_ACCESS_KEY, AWS_ACCESS_KEY_ID, and AWS_REGION when prompted]
+
+4. Locate the **backup.db** file in the S3 bucket\
+    `aws --endpoint-url=http://local.clouded.htb s3 ls`
+  
+5. Download the **backup.db** file\
+    `aws --endpoint-url=http://local.clouded.htb s3 cp s3://clouded-internal/backup.db .`
+
+6. Continue with the following stage to gain initial access
 
 ## Initial Access
 
