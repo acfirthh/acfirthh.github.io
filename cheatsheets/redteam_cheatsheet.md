@@ -105,10 +105,10 @@ rustscan -a <IP|Hostname> --ulimit 10000 -- -sV
 ## Web Applications
 ### Subdomain Scanning
 ```
-gobuster vhost -u http(s)://<target.site> -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain -r
+gobuster vhost -u http(s)://<target.site> -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain -r
 [Uses GoBuster to scan a given target for 'vhosts' (subdomains)]
 
-ffuf -u http(s)://<target.site> -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.<target.site> <filter_args>"
+ffuf -u http(s)://<target.site> -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.<target.site> <filter_args>"
 [Uses FFUF to scan for valid subdomains]
 
     Filtering:
@@ -120,7 +120,7 @@ ffuf -u http(s)://<target.site> -w /usr/share/wordlists/SecLists/Discovery/DNS/s
 
 ### Directory Scanning
 ```
-ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-large-directories.txt -u http(s)://<target.site>/FUZZ/ <filter_args>
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -u http(s)://<target.site>/FUZZ/ <filter_args>
 [Uses FFUF to scan for valid directories]
 
     Filtering:
@@ -129,7 +129,7 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-large-directori
         -fs     Filter by HTTP response size. Comma separated list of sizes
         -fw     Filter by amount of words in response. Comma separated list of word counts
 
-gobuster dir -u http(s)://<target.site>/ -w /usr/share/wordlists/seclists/Web-Content/raft-large-directories.txt
+gobuster dir -u http(s)://<target.site>/ -w /usr/share/seclists/Web-Content/raft-large-directories.txt
 [Uses GoBuster to scan for valid directories]
 
 - Recursive Directory Scanning
@@ -137,7 +137,7 @@ feroxbuster -u http(s)://<target.site>/
 [Uses FeroxBuster to recursively scan for valid directories]
 
 - Scan for files
-ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-large-files.txt -u http(s)://<target.site>/FUZZ/ <filter_args>
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-large-files.txt -u http(s)://<target.site>/FUZZ/ <filter_args>
 [Uses FFUF to scan for common files]
 
     Filtering:
