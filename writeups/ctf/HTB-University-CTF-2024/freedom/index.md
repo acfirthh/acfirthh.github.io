@@ -27,7 +27,7 @@ I started up **BurpSuite**, activated **foxy proxy** in my browser and visited *
 
 ![Freedom.htb Website](images/website.png)
 
-I was met with this rather funky blog with 4 blog posts. I looked back at the NMAP scan at the entired form the **robots.txt** file and saw that `/admin/` was there, so of course, I browsed to that directory.
+I was met with this rather funky blog with 4 blog posts. I looked back at the NMAP scan, specifically at the entries in the **robots.txt** file and saw that `/admin/` was there, so of course, I browsed to that directory.
 
 ![Masa CMS Login](images/admin_page.png)
 
@@ -38,10 +38,12 @@ There was a login page for what seemed to be **"Masa CMS"**, but there wasn't a 
 The version running is **"Masa CMS 7.4.5"**, now equipped with this information, I took to the internet to research for potential vulnerabilities and exploits that have been found and disclosed for this version.
 
 ### SQL Injection
-I discovered that there was a recent [SQL Injection](https://projectdiscovery.io/blog/hacking-apple-with-sql-injection) vulnerability found in **Masa CMS** marked **CVE-2024-32640** with a [Proof-of-Concept](https://www.pizzapower.me/2024/11/13/mura-masa-cms-sql-injection-cve-2024-32640/) Python script freely available.
+I discovered that there was a recent [SQL Injection](https://projectdiscovery.io/blog/hacking-apple-with-sql-injection) vulnerability found in **Masa CMS** marked as **CVE-2024-32640** with a [Proof-of-Concept](https://www.pizzapower.me/2024/11/13/mura-masa-cms-sql-injection-cve-2024-32640/) Python script freely available.
 
 Instead of using this PoC, I decided to just use **sqlmap** and quickly threw together a command to use:\
-`sqlmap -u "http://freedom.htb/index.cfm/_api/json/v1/default/?method=processAsyncObject" --data "object=displayregion&contenthistid=x%5C'*--+Arrv&previewid=1" --level 3 --risk 2 --method POST --dbms=mysql --timeout=10 --technique=T --batch -D dbMasaCMS -T <table> -C <column/s>`
+```
+sqlmap -u "http://freedom.htb/index.cfm/_api/json/v1/default/?method=processAsyncObject" --data "object=displayregion&contenthistid=x%5C'*--+Arrv&previewid=1" --level 3 --risk 2 --method POST --dbms=mysql --timeout=10 --technique=T --batch -D dbMasaCMS -T <table> -C <column/s>
+```
 
 **Masa CMS** is also open-source, meaning the entire *(unmodified)* source code is available on their [GitHub repository](https://github.com/MasaCMS/MasaCMS).
 
@@ -57,13 +59,15 @@ So, I tested it out. I clicked the *"Forgot Password"* button, entered the admin
 
 ![Admin Password Reset](images/admin_password_reset.png)
 
-`sqlmap -u "http://freedom.htb/index.cfm/_api/json/v1/default/?method=processAsyncObject" --data "object=displayregion&contenthistid=x%5C'*--+Arrv&previewid=1" --level 3 --risk 2 --method POST --dbms=mysql --timeout=10 --technique=T --batch -D dbMasaCMS -T tredirects -C URL --dump`
+```
+sqlmap -u "http://freedom.htb/index.cfm/_api/json/v1/default/?method=processAsyncObject" --data "object=displayregion&contenthistid=x%5C'*--+Arrv&previewid=1" --level 3 --risk 2 --method POST --dbms=mysql --timeout=10 --technique=T --batch -D dbMasaCMS -T tredirects -C URL --dump
+```
 
 ![Password Reset Link](images/password_reset_link.png)
 
 I copied the retrieved link and pasted it into my browser, it opened up a profile editor for the admin user, I changed the password and submitted it, then it automatically logged me in after the password change! **SUCCESS!**
 
-After reading back the initial SQL Injection vulnerability discovery post, I saw that they referenced that it would be possible to get **RCE** by uploading a malicious plugin. Doing some more research, I found out that **Masa CMS** and **Mura CMS** are pretty similar and use the same plugins and language, so I downloaded a pre-made **Mura CMS** plugin and mofidied the code to run malicious code when installed.
+After reading back the post made by the researchers that discovered the SQL injection vulnerability, I saw that they referenced that it would be possible to get **RCE** by uploading a malicious plugin. Doing some more research, I found out that **Masa CMS** and **Mura CMS** are pretty similar and use the same plugins and language, so I downloaded a pre-made **Mura CMS** plugin and modified the code to run malicious code when installed.
 
 #### Backdooring the Plugin
 When reading the NMAP scan results, I spotted that it said that the web server was running on **Apache** for **Ubuntu** which I thought was a bit odd because it was supposedly a Domain Controller which are usually **Windows Server** based. But I just thought that maybe it was running in a **Docker** container or something similar.
@@ -76,7 +80,7 @@ I modified the `index.cfm` page in the plugin to contain only this code:
 <cfdump var="#data#">
 ```
 
-I then modified the `Application.cfc` to only inlude the `index.cfm` and the `settings.cfm` files. This would mean that it only executes my malicious code and doesn't do anything I don't want it to.
+I then modified the `Application.cfc` to only include the `index.cfm` and the `settings.cfm` files. This would mean that it only executes my malicious code and doesn't do anything I don't want it to.
 
 ```
 component accessors=true output=false {
@@ -116,7 +120,7 @@ After zipping up the plugin contents, I browsed to the plugin upload page on the
 I started a listener on my machine:\
 `nc -nvlp 4444`
 
-I then clicked *"deploy"* and then clicked the *"UPDATE"* button to run my plugin. I checked my listener but I didn't have a callback just yet, so I visited the index page of the plugin in my browser:\
+I then clicked *"Deploy"* and then clicked the *"UPDATE"* button to run my plugin. I checked my listener but I didn't have a callback just yet, so I visited the index page of the plugin in my browser:\
 `http://freedom.htb/plugins/MuraPlugin/index.cfm`
 
 Again, I checked my listener and I had a shell as... **root!**
@@ -128,4 +132,4 @@ I looked about the file system but didn't find any flags, I also noticed that it
 I then ran the command `mount` to view any mounted filesystems and spotted a filesystem mounted at `/mnt/c`. I changed directory into it and saw that it was a **Windows** filesystem! This must have been where all of the Domain Controller processes were being run. But, I had full root access to the filesystem so I just got the flags from the **Administrator** user's desktop and **j.bret** user's desktop!
 
 ## Final Words
-This route was defiitely unintended as there was no need for any sort of privilege escalation and it gave immediate root access to the filesystem. But nevertheless, it was still an incredibly fun challenge with plenty of enumeration needed to find what was needed to exploit the machine.
+This route was definitely unintended as there was no need for any sort of privilege escalation and it gave immediate root access to the filesystem. But nevertheless, it was still an incredibly fun challenge with plenty of enumeration needed to find what was required to exploit the machine.
