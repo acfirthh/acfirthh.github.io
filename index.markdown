@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Acfirth's Blog"
+title: "Main"
 permalink: /
 ---
 
