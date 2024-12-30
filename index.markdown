@@ -6,7 +6,7 @@ permalink: /
 
 ## >> whoami
 I am a cybersecurity student, a programmer, and a CTF enthusiast with focuses on web vulnerabilities and full-pwn!\
-I've made this blog to share my research into various topics within cybersecurity, as well as writeups for boxes I have completed on TryHackMe and HackTheBox.
+I've built this website to share my research into various topics within cybersecurity, as well as writeups for boxes I have completed on TryHackMe and HackTheBox.
 
 <a href="https://tryhackme.com/r/p/acfirth"><img src="https://tryhackme-badges.s3.amazonaws.com/acfirth.png" alt="TryHackMe: acfirth" /></a>
 
