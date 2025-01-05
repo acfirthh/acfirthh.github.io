@@ -108,7 +108,7 @@ rustscan -a <IP|Hostname> --ulimit 10000 -- -sV
 gobuster vhost -u http(s)://<target.site> -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain -r
 [Uses GoBuster to scan a given target for 'vhosts' (subdomains)]
 
-ffuf -u http(s)://<target.site> -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.<target.site> <filter_args>"
+ffuf -u http(s)://<target.site> -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.<target.site>" <filter_args>
 [Uses FFUF to scan for valid subdomains]
 
     Filtering:
