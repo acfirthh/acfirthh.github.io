@@ -14,6 +14,7 @@ All writeups are sorted into groups by difficulty.
 ## Medium
 - [Administrator](/writeups/hackthebox/machines/administrator)
 - [Certified](/writeups/hackthebox/machines/certified)
+- [Heal](/writeups/hackthebox/machines/heal)
 
 ## Hard
 - [Yummy](/writeups/hackthebox/machines/yummy)
