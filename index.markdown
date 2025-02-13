@@ -10,6 +10,14 @@ permalink: /
         align-items: center;
         gap: 20px;
     }
+
+    @media (max-width: 768px) {
+        .badge-container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
 </style>
 
 ## >> whoami
