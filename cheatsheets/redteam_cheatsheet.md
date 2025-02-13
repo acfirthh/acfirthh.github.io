@@ -26,6 +26,7 @@ permalink: /cheatsheets/redteam-cheatsheet
 - [Generating Payloads](#generating-payloads)
     - [MSFVenom](#msfvenom)
     - [revgen](#revgen)
+        - [Stabilising Reverse Shells](#stabilising-a-simple-reverse-shell)
 - [FTP and SMB](#ftp-and-smb)
     - [FTP Anonymous Login](#ftp-anonymous-login)
     - [SMB Enumeration](#smb-enumeration)

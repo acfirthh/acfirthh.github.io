@@ -4,13 +4,23 @@ title: "Main"
 permalink: /
 ---
 
+<style>
+    .badge-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+</style>
+
 ## >> whoami
 I am a cybersecurity student, a programmer, and a CTF enthusiast with focuses on web vulnerabilities and full-pwn!\
 I've built this website to share my research into various topics within cybersecurity, as well as writeups for boxes I have completed on TryHackMe and HackTheBox.
 
-<a href="https://tryhackme.com/r/p/acfirth"><img src="https://tryhackme-badges.s3.amazonaws.com/acfirth.png" alt="TryHackMe: acfirth" /></a>
-
-[![Github URL](https://img.shields.io/github/followers/acfirthh?label=Github&logo=Github&style=for-the-badge)](https://github.com/acfirthh)
+<div class="badge-container">
+    <script src="https://www.hackthebox.eu/badge/1379691"></script>
+    <script src="https://tryhackme.com/badge/1461775"></script>
+    <a href="https://github.com/acfirthh"><img src="https://img.shields.io/github/followers/acfirthh?label=Github&logo=Github&style=for-the-badge" alt="GitHub: acfirthh"></a>
+</div>
 
 ## Posts
 - [View all of my posts](/posts)
