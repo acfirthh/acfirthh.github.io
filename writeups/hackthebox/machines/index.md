@@ -8,6 +8,7 @@ permalink: /writeups/hackthebox/machines
 All writeups are sorted into groups by difficulty.
 
 ## Easy
+- [Cicada](/writeups/hackthebox/machines/cicada)
 - [Alert](/writeups/hackthebox/machines/alert)
 - [LinkVortex](/writeups/hackthebox/machines/linkvortex)
 - [EscapeTwo](/writeups/hackthebox/machines/escapetwo)
