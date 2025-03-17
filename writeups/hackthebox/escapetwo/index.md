@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - EscapeTwo"
-permalink: /writeups/hackthebox/machines/escapetwo
+permalink: /writeups/hackthebox/escapetwo
 ---
 
 ![HackTheBox: EscapeTwo (Easy)](images/escapetwo.png)

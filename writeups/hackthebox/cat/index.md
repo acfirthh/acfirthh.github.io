@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Cat"
-permalink: /writeups/hackthebox/machines/cat
+permalink: /writeups/hackthebox/cat
 ---
 
 ![HackTheBox: Cat (Medium)](images/cat.png)

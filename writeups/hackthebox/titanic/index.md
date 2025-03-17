@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Titanic"
-permalink: /writeups/hackthebox/machines/titanic
+permalink: /writeups/hackthebox/titanic
 ---
 
 ![HackTheBox: Titanic (Easy)](images/titanic.png)

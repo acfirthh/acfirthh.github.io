@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Heal"
-permalink: /writeups/hackthebox/machines/heal
+permalink: /writeups/hackthebox/heal
 ---
 
 ![HackTheBox: Heal (Medium)](images/heal.png)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Administrator"
-permalink: /writeups/hackthebox/machines/administrator
+permalink: /writeups/hackthebox/administrator
 ---
 
 ![HackTheBox: Administrator (Medium)](images/administrator.png)

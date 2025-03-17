@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Backfire"
-permalink: /writeups/hackthebox/machines/backfire
+permalink: /writeups/hackthebox/backfire
 ---
 
 ![HackTheBox: Backfire (Medium)](images/backfire.png)

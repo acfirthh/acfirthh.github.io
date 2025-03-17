@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Alert"
-permalink: /writeups/hackthebox/machines/alert
+permalink: /writeups/hackthebox/alert
 ---
 
 ![HackTheBox: Alert (Easy)](images/alert.png)

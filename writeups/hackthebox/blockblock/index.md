@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - BlockBlock"
-permalink: /writeups/hackthebox/machines/blockblock
+permalink: /writeups/hackthebox/blockblock
 ---
 
 ![HackTheBox: BlockBlock (Hard)](images/blockblock.png)

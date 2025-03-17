@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Cicada"
-permalink: /writeups/hackthebox/machines/cicada
+permalink: /writeups/hackthebox/cicada
 ---
 
 ![HackTheBox: Cicada (Easy)](images/cicada.png)

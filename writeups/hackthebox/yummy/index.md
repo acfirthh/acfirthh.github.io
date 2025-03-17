@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Yummy Writeup"
-permalink: /writeups/hackthebox/machines/yummy
+permalink: /writeups/hackthebox/yummy
 ---
 
 ![HackTheBox: Yummy (Hard)](images/yummy.png)

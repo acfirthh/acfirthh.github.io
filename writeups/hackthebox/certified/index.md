@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Certified"
-permalink: /writeups/hackthebox/machines/certified
+permalink: /writeups/hackthebox/certified
 ---
 
 ![HackTheBox: Certified (Medium)](images/certified.png)

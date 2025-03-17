@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Ghost"
-permalink: /writeups/hackthebox/machines/ghost
+permalink: /writeups/hackthebox/ghost
 ---
 
 ![HackTheBox: Ghost (Insane)](images/ghost.png)

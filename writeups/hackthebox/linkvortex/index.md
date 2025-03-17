@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - LinkVortex"
-permalink: /writeups/hackthebox/machines/linkvortex
+permalink: /writeups/hackthebox/linkvortex
 ---
 
 ![HackTheBox: LinkVortex (Easy)](images/linkvortex.png)

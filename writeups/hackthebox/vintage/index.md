@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HackTheBox - Vintage"
-permalink: /writeups/hackthebox/machines/vintage
+permalink: /writeups/hackthebox/vintage
 ---
 
 ![HackTheBox: Vintage (Hard)](images/vintage.png)
