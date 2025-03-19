@@ -39,7 +39,10 @@ I've built this website to share my research into various topics within cybersec
 - [CTF Writeups](/writeups/ctf)
 
 ## Cheatsheets
-- [View all of my cheatsheets](/cheatsheets)
+- [Linux Pentesting Cheatsheet](/cheatsheets/linux-pentesting-cheatsheet)
+- [Windows and AD Pentesting Cheatsheet](/cheatsheets/windows-pentesting-cheatsheet)
+- [Web Application Pentesting Cheatsheet](/cheatsheets/webapp-pentesting-cheatsheet)
+- [General Linux Commands Cheatsheet](/cheatsheets/linux-cheatsheet)
 
 ## Custom Scripts and Tools
 - [Custom Scripts and Tools](/tools)
