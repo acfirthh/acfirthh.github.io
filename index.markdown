@@ -30,8 +30,15 @@ I've built this website to share my research into various topics within cybersec
     <a href="https://github.com/acfirthh"><img src="https://img.shields.io/github/followers/acfirthh?label=Github&logo=Github&style=for-the-badge" alt="GitHub: acfirthh"></a>
 </div>
 
-## Posts
-- [View all of my posts](/posts)
+## Recent Posts
+<ul>
+    {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %d, %Y" }}</small>
+        </li>
+    {% endfor %}
+</ul>
+<a href="/posts">View all posts</a>
 
 ## Writeups
 - [HackTheBox Writeups](/writeups/hackthebox)
