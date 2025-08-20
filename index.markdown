@@ -21,7 +21,7 @@ permalink: /
 </style>
 
 ## >> whoami
-I am a cybersecurity student, a programmer, and a CTF enthusiast with focuses on web vulnerabilities and full-pwn!\
+I am a cybersecurity graduate, a programmer, and a CTF enthusiast with focuses on web vulnerabilities and full-pwn!\
 I've built this website to share my research into various topics within cybersecurity, as well as writeups for boxes I have completed on TryHackMe and HackTheBox.
 
 <div class="badge-container">
