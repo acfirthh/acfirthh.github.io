@@ -25,9 +25,8 @@ I am a cybersecurity graduate, a programmer, and a CTF enthusiast with focuses o
 I've built this website to share my research into various topics within cybersecurity, as well as writeups for boxes I have completed on TryHackMe and HackTheBox.
 
 <div class="badge-container">
-    <script src="https://www.hackthebox.eu/badge/image/1379691"></script>
-    <script src="https://tryhackme.com/badge/1461775"></script>
-    <a href="https://github.com/acfirthh"><img src="https://img.shields.io/github/followers/acfirthh?label=Github&logo=Github&style=for-the-badge" alt="GitHub: acfirthh"></a>
+    <img src="https://www.hackthebox.eu/badge/image/1379691" alt="HackTheBox Profile Badge">
+    <img src="https://tryhackme-badges.s3.amazonaws.com/acfirth.png" alt="TryHackMe Profile Badge">
 </div>
 
 ## Recent Posts
