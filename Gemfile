@@ -1,11 +1,14 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "minima", "~> 2.5"                  # we won’t actually use it
+gem "github-pages", "~> 228", group: :jekyll_plugins
+
 gem "jekyll-feed", "~> 0.17"
 gem "jekyll-seo-tag", "~> 2.8"
 gem "jekyll-sitemap", "~> 1.4"
+gem "jekyll-paginate", "~> 1.1"
 
-group :jekyll_plugins do
-  gem "jekyll-paginate", "~> 1.1"
-end
+# Windows and JRuby specific gems
+gem "wdm", "~> 0.2", platforms: [:mingw, :x64_mingw, :mswin]
+gem "webrick", "~> 1.8"
