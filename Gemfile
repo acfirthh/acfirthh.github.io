@@ -2,13 +2,9 @@
 
 source "https://rubygems.org"
 
-gem "github-pages", "~> 228", group: :jekyll_plugins
+# Use the latest github-pages gem (currently 232+)
+gem "github-pages", group: :jekyll_plugins
 
-gem "jekyll-feed", "~> 0.17"
-gem "jekyll-seo-tag", "~> 2.8"
-gem "jekyll-sitemap", "~> 1.4"
-gem "jekyll-paginate", "~> 1.1"
-
-# Windows and JRuby specific gems
+# Windows and JRuby helpers
 gem "wdm", "~> 0.2", platforms: [:mingw, :x64_mingw, :mswin]
 gem "webrick", "~> 1.8"
