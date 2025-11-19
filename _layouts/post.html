@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.categories %} • {{ page.categories | join: " · " }}{% endif %}</p>
 
-<h1>{{ page.title }}</h1>
-<p class="view">by {{ page.author | default: site.author }}</p>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
 
-<small>Date: {{ page.date | date: "%-d %B %Y" }}</small><br />
-<small>Categories: {{ page.categories | join: ', ' }}</small>
-
-{{content}}
-
-{% if page.tags %}
-    <br>
-    <small>Tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+<div class="back-home">
+  <a href="{{ '/' | relative_url }}">← Back to home</a>
+</div>
