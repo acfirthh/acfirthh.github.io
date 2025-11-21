@@ -6,7 +6,6 @@ categories: [thm]
 ---
 
 ![TryHackMe: LazyAdmin (Easy)](/assets/images/writeups/thm/lazyadmin/LazyAdmin.jpeg)
-<h1><ins>TryHackMe: LazyAdmin Writeup</ins></h1>
 
 **Date:** 13/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

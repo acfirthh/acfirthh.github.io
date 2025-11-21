@@ -2,10 +2,8 @@
 layout: post
 title: "HackTheBox University CTF 2024 - Freedom Writeup"
 permalink: /writeups/ctf/HTB-University-CTF-2024/freedom
-categories: [ctf, medium]
+categories: [ctf, htb, medium]
 ---
-
-<h1><ins>HackTheBox University CTF 2024: Freedom Writeup</ins></h1>
 
 **Date:** 18/12/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)

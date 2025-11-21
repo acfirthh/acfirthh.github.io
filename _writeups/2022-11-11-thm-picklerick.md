@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: post
 title: "TryHackMe - Pickle Rick"
 permalink: /writeups/tryhackme/pickle-rick
 categories: [thm]
 ---
 
 ![TryHackMe: Pickle Rick (Easy)](/assets/images/writeups/thm/picklerick/Pickle_Rick.jpeg)
-<h1><ins>TryHackMe: Pickle Rick Writeup</ins></h1>
 
 **Date:** 11/11/2022\
 **Author:** [acfirthh](https://github.com/acfirthh)

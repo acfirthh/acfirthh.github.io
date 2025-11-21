@@ -326,3 +326,35 @@ blockquote:hover {
   box-shadow: 0 6px 30px rgba(57, 255, 20, 0.25) !important;
   border-left-color: #39ff14 !important;
 }
+
+.post-content a,
+article a,
+a:not(.card-link):not(.nav-links a):not(.logo):not(.back-home a) {
+    color: #58a6ff !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(88, 166, 255, 0.4);
+    transition: all 0.2s ease;
+}
+
+.post-content a:hover,
+article a:hover,
+a:not(.card-link):not(.nav-links a):not(.logo):not(.back-home a):hover {
+    color: #8bbfff !important;
+    text-decoration-color: #8bbfff;
+}
+
+.post-content a:visited,
+article a:visited {
+    color: #7b96c0 !important;
+}
+
+.post-content code:not(pre code),
+article code:not(pre code) {
+    background: #21262d !important;
+    color: #f0f6fc !important;
+    padding: 0.15em 0.4em !important;
+    border-radius: 6px !important;
+    border: 1px solid #30363d !important;
+    font-size: 0.92em !important;
+    font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace !important;
+}

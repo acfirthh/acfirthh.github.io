@@ -6,7 +6,6 @@ categories: [htb]
 ---
 
 ![HackTheBox: Cicada (Easy)](/assets/images/writeups/htb/cicada/cicada.png)
-<h1><ins>HackTheBox: Cicada Writeup</ins></h1>
 
 **Date:** 12/10/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)

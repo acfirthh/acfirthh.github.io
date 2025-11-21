@@ -2,10 +2,8 @@
 layout: post
 title: "HackTheBox University CTF 2024 - Clouded Writeup"
 permalink: /writeups/ctf/HTB-University-CTF-2024/clouded
-categories: [ctf, easy]
+categories: [ctf, htb, easy]
 ---
-
-<h1><ins>HackTheBox University CTF 2024: Clouded Writeup</ins></h1>
 
 **Date:** 18/12/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)
@@ -173,7 +171,7 @@ I copied the output from **hashcat** into a file and removed the hashes so it wa
 ...
 ```
 
-This meant that I could not use the list with **hydra** to brute-force SSH and test for password reuse.
+This meant that I could now use the list with **hydra** to brute-force SSH and test for password reuse.
 
 As I didn't have specific usernames to test, only first and last names, I tested multiple different options for the usernames.
 

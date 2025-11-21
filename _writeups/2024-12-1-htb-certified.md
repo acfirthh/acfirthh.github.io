@@ -6,7 +6,6 @@ categories: [htb]
 ---
 
 ![HackTheBox: Certified (Medium)](/assets/images/writeups/htb/certified/certified.png)
-<h1><ins>HackTheBox: Certified Writeup</ins></h1>
 
 **Date:** 01/12/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)

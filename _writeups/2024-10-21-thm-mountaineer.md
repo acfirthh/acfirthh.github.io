@@ -6,7 +6,6 @@ categories: [thm]
 ---
 
 ![TryHackMe: Mountaineer (Hard)](/assets/images/writeups/thm/mountaineer/mountaineer.png)
-<h1><ins>TryHackMe: Mountaineer Writeup</ins></h1>
 
 **Date:** 21/10/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)

@@ -2,10 +2,8 @@
 layout: post
 title: "HackTheBox University CTF 2024 - Apolo Writeup"
 permalink: /writeups/ctf/HTB-University-CTF-2024/apolo
-categories: [ctf, very easy]
+categories: [ctf, htb, very easy]
 ---
-
-<h1><ins>HackTheBox University CTF 2024: Apolo Writeup</ins></h1>
 
 **Date:** 18/12/2024\
 **Author:** [acfirthh](https://github.com/acfirthh)
