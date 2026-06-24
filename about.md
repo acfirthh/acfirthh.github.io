@@ -26,21 +26,15 @@ Here are a selection of archived CTF challenges that I created and were used in 
 
 ### Web
 - [Flower Shop](https://github.com/DMUHackers/Pwn2Play/tree/master/2025/Web/Flower%20Shop)
-
 - [Flower Shop: The Re-Opening](https://github.com/DMUHackers/Pwn2Play/tree/master/2025/Web/Flower%20Shop%20-%20The%20Re-Opening)
-
 - [NoteVault](https://github.com/DMUHackers/Pwn2Play/tree/master/2026/Web/NoteVault)
 
 ### Binary Exploitation (PWN)
 - [LetsChat](https://github.com/DMUHackers/Pwn2Play/tree/master/2025/Pwn/LetsChat)
-
 - [P2P Operator Terminal](https://github.com/DMUHackers/Pwn2Play/tree/master/2025/Pwn/P2P%20Operator%20Terminal)
-
 - [Boring Binary](https://github.com/DMUHackers/Pwn2Play/tree/master/2026/Pwn/Boring%20Binary)
-
 - [My First ASM](https://github.com/DMUHackers/Pwn2Play/tree/master/2026/Pwn/My%20First%20ASM)
-
 - [Sign Up Here](https://github.com/DMUHackers/Pwn2Play/tree/master/2026/Pwn/Sign%20Up%20Here)
 
 ## Socials
-→ GitHub: [https://github.com/acfirthh](https://github.com/acfirthh)
+- GitHub: [https://github.com/acfirthh](https://github.com/acfirthh)
